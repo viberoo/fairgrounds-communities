@@ -1,0 +1,98 @@
+/* Fairgrounds Communities — static duplicate. Colours from the original:
+   bright orange #ff6310, dark navy #1E262E, slate body text, green #105b00
+   submit buttons. Font is Lexend, as on the original. */
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;font-family:'Lexend',Arial,sans-serif;color:#333;line-height:1.65;background:#fff;overflow-x:hidden}
+h1,h2,h3{font-family:'Lexend',Arial,sans-serif;line-height:1.25;color:#ff6310}
+h1{font-size:2.2rem;margin:0 0 14px}
+h2{font-size:1.7rem;margin:28px 0 10px}
+h3{font-size:1.25rem;margin:22px 0 8px}
+a{color:#ff6310}
+img{max-width:100%;height:auto;display:block}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+section{padding:28px 0}
+p{margin:0 0 14px}
+ul{margin:8px 0 16px;padding-left:22px}
+li{margin:6px 0}
+/* heading rule: thick, short, rounded orange rule, as on the original */
+.rule{width:67%;max-width:420px;height:10px;background:#ff6310;border-radius:5px;margin:6px 0 18px}
+/* header */
+header.site{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid #e5e7eb}
+.header-inner{display:flex;align-items:center;gap:24px;max-width:1200px;margin:0 auto;padding:8px 20px}
+.logo img{height:64px;width:auto}
+nav.main{margin-left:auto}
+nav.main ul{display:flex;gap:28px;list-style:none;margin:0;padding:0;flex-wrap:wrap}
+nav.main a{text-decoration:none;font-weight:600;color:#1E262E;text-transform:uppercase;letter-spacing:.08em;font-size:.95rem}
+nav.main a.active,nav.main a:hover{color:#ff6310}
+.menu-toggle{display:none;background:#1E262E;color:#fff;border:0;padding:10px 14px;border-radius:4px;cursor:pointer;margin-left:auto;font:inherit}
+/* buttons */
+.btn{display:inline-block;background:#1E262E;color:#fff!important;text-decoration:none;padding:14px 28px;font-weight:700;border-radius:4px;border:0;cursor:pointer;text-transform:uppercase;letter-spacing:.04em}
+.btn:hover{background:#ff6310}
+.btn-orange{background:#ff6310}.btn-orange:hover{background:#1E262E}
+/* welcome */
+.welcome{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center}
+.welcome .big-logo img{width:100%;max-width:520px;margin:0 auto}
+.logos-row{display:flex;flex-wrap:wrap;gap:32px;align-items:center;justify-content:center;padding:10px 0}
+.logos-row img{max-height:120px;width:auto}
+.logos-row img.tall{max-height:170px}
+/* photo band */
+.photo-band{padding:0}
+.photo-band img{width:100%;height:420px;object-fit:cover}
+/* orange application band */
+.app-band{background:#ff6310;color:#fff;padding:56px 0}
+.app-band .wrap{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.app-band img.signing{max-width:400px;width:100%;border-radius:6px}
+.app-band img.band-logo{max-width:340px;width:100%;margin:0 auto 20px;background:#fff;border-radius:8px;padding:8px}
+.app-band p{color:#fff}
+/* info cards */
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.card{border:1px solid #e5e7eb;border-radius:8px;padding:20px 22px}
+.card h3{margin-top:0}
+/* forms */
+form.site-form{max-width:680px}
+form.site-form label{display:block;font-weight:600;margin:16px 0 4px}
+form.site-form input,form.site-form textarea,form.site-form select{width:100%;padding:12px 16px;border:1px solid #1e73be;border-radius:999px;font:inherit;color:#333;background:#fff}
+form.site-form textarea,form.site-form select{border-radius:12px}
+form.site-form.maint input,form.site-form.maint textarea,form.site-form.maint select{border-color:#dbdbdb}
+form.site-form button[type=submit]{margin-top:22px;background:#105b00;color:#fff;border:0;padding:13px 34px;border-radius:999px;font:inherit;font-weight:700;cursor:pointer;text-transform:uppercase}
+form.site-form button[type=submit]:hover{background:#000}
+.note{font-size:.92rem;color:#6b7280}
+/* footer */
+footer.site{background:#fff;padding:0 0 28px}
+.tile-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;max-width:1100px;margin:0 auto;padding:0 20px}
+.tile-grid img{width:100%;height:220px;object-fit:cover;border-radius:4px}
+.tile-grid img.logo-tile{object-fit:contain;padding:18px;background:#fff}
+.footer-contact{text-align:center;padding:28px 20px 8px;color:#ff6310;font-weight:600;font-size:1.1rem;line-height:1.9}
+.footer-contact a{color:#ff6310}
+.footer-equal{text-align:center;padding:6px 0 10px}
+.footer-equal img{max-width:150px;margin:0 auto}
+.footer-copy{text-align:center;color:#6b7280;font-size:.95rem;padding:6px 20px}
+.footer-copy a{color:#6b7280}
+/* for-sale page */
+.flyer-hero{background:#1E262E;color:#fff;padding:52px 0;text-align:center}
+.flyer-hero h1{color:#fff;font-size:2.4rem}
+.flyer-hero .price{font-size:1.6rem;font-weight:700;color:#ff6310}
+.stat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin:24px 0}
+.stat{border:1px solid #e5e7eb;border-radius:8px;padding:16px;text-align:center}
+.stat b{display:block;font-size:1.5rem;color:#ff6310}
+.flyer-cols{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+@media(max-width:820px){
+  .menu-toggle{display:block;min-height:44px}
+  nav.main{display:none;width:100%}
+  nav.main.open{display:block}
+  nav.main ul{flex-direction:column;gap:10px;padding:12px 0}
+  nav.main a{display:block;padding:10px 0}
+  .header-inner{flex-wrap:wrap;gap:12px;padding:8px 16px}
+  .logo img{height:52px}
+  .welcome{grid-template-columns:1fr}
+  .app-band .wrap{grid-template-columns:1fr}
+  .cards{grid-template-columns:1fr}
+  .flyer-cols{grid-template-columns:1fr}
+  .stat-grid{grid-template-columns:repeat(2,1fr)}
+  .tile-grid{grid-template-columns:repeat(2,1fr)}
+  .tile-grid img{height:170px}
+  .photo-band img{height:260px}
+  h1{font-size:1.8rem}
+  .btn{display:block;text-align:center}
+}
