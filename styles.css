@@ -58,6 +58,17 @@ form.site-form.maint input,form.site-form.maint textarea,form.site-form.maint se
 form.site-form button[type=submit]{margin-top:22px;background:#105b00;color:#fff;border:0;padding:13px 34px;border-radius:999px;font:inherit;font-weight:700;cursor:pointer;text-transform:uppercase}
 form.site-form button[type=submit]:hover{background:#000}
 .note{font-size:.92rem;color:#6b7280}
+/* contact info box: each detail on its own row so long links never dangle */
+.info-box{border:1px solid #e5e7eb;border-radius:8px;overflow:hidden;margin:18px 0}
+.info-row{display:flex;gap:16px;padding:12px 16px;border-top:1px solid #e5e7eb}
+.info-row:first-child{border-top:0}
+.info-row:nth-child(odd){background:#f9fafb}
+.info-label{flex:0 0 190px;font-weight:700;color:#1E262E}
+.info-value{flex:1;min-width:0;overflow-wrap:anywhere}
+.maint-list{margin:8px 0 16px}
+@media(max-width:820px){
+  .info-row{flex-direction:column;gap:2px}
+}
 /* footer */
 footer.site{background:#fff;padding:0 0 28px}
 .tile-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;max-width:1100px;margin:0 auto;padding:0 20px}
