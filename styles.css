@@ -88,6 +88,8 @@ footer.site{background:#fff;padding:0 0 28px}
 .stat{border:1px solid #e5e7eb;border-radius:8px;padding:16px;text-align:center}
 .stat b{display:block;font-size:1.5rem;color:#ff6310}
 .flyer-cols{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+.flyer-img{width:100%;border-radius:8px;display:block}
+figure.flyer-img-narrow{max-width:720px;margin:0 auto}
 @media(max-width:820px){
   .menu-toggle{display:block;min-height:44px}
   nav.main{display:none;width:100%}
